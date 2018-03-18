@@ -85,7 +85,7 @@ with open("adsb.csv") as f:
 
 
         outputfile = "adsb_lookup.csv"
-        csvrow=[flightnumber,origin_friendly,origin,destination_friendly,destination,airline,aircraft_make,aircraft_model]
+        csvrow=[flightnumber,origin_friendly,origin,destination_friendly,destination,route,airline,aircraft_make,aircraft_model]
         with open (outputfile, "a") as lookup:
             wr = csv.writer(lookup, dialect='excel')
             wr.writerow(csvrow)
